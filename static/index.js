@@ -1,13 +1,12 @@
-//Create date variable
-
+var date = new Date()
+let display_date= "Date:" + date.toLocaleDateString()
 
 //Load HTML DOM
+$(document).ready(function () {
+    $("#display_date").html(display_date)
+})
 
-//Define variable to store predicted emotion
-
-
-//HTML-->JavaScript--->Flask
-//Flask--->JavaScript--->HTML
+let predicted_emotion;
 
 //jQuery selector and click action
 
